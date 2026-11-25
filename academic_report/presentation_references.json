@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Formatting and Surface Feature Confounds in AI Text Detection: A Clever Hans Effect",
+    "authors": "Dutta Chowdhury, S. A., España-Bonet, C., & Van Genabith, J.",
+    "year": 2026,
+    "venue": "Findings of EMNLP 2026, 22266–22277",
+    "url": "https://aclanthology.org/2026.findings-emnlp.1051/",
+    "relevance": "The paper studies benchmark artifacts and formatting effects, showing that surface cues can separate classes in a benchmark without providing stable evidence across benchmarks. Controlled reformatting reveals detector-specific sensitivity. Its “Clever Hans” framing maps closely to the risk that a stylometric detector exploits dataset conventions rather than a durable property of authorship."
+  },
+  {
+    "title": "A Systematic Analysis of Linguistic Features in AI-Generated English Text Detection Across Domains and Models",
+    "authors": "El Attar, A., Dönmez, Ç., Maurer, M., & Falenska, A.",
+    "year": 2026,
+    "venue": "Findings of IJCNLP-AACL 2026, 181–208",
+    "url": "https://aclanthology.org/2026.findings-aacl.10/",
+    "relevance": "Using 284 interpretable linguistic features across 30 LLMs and ten domains, this study examines which linguistic signals generalize. It finds that some lexical richness features can be more stable while many individual features depend on context, domain, or model. This cautions against assuming that a feature ranking from one balanced sample is universal."
+  },
+  {
+    "title": "Explaining Generalization of AI-Generated Text Detectors Through Linguistic Analysis",
+    "authors": "Xia, M., Stańczak, K., & Roth, B.",
+    "year": 2026,
+    "venue": "EACL 2026, 6524–6546",
+    "url": "https://aclanthology.org/2026.eacl-long.307/",
+    "relevance": "This work relates detector performance shifts across prompts, models, and datasets to linguistic characteristics, including tense and pronoun patterns. It emphasizes that linguistic variation can explain why a model's score changes under distribution shift. Its feature-level analyses complement post-hoc explanations by connecting performance differences to properties of language, while not making those associations causal by default."
+  },
+  {
+    "title": "AI Writers Have a Consistent Stylometric Footprint, but AI Editors Do Not",
+    "authors": "Shan, Z., Lee, Y., & Hao, S.",
+    "year": 2026,
+    "venue": "EMNLP",
+    "url": "https://aclanthology.org/2026.emnlp-main.1725/",
+    "relevance": "Motivates separating the study's generation labels from AI-assisted editing when interpreting stylometry."
+  },
+  {
+    "title": "A Practical Examination of AI-Generated Text Detectors for Large Language Models",
+    "authors": "Tufts, B., Zhao, A., & Li, S.",
+    "year": 2025,
+    "venue": "Findings of NAACL 2025, 4839–4856",
+    "url": "https://aclanthology.org/2025.findings-naacl.271/",
+    "relevance": "This practical evaluation compares detectors on unseen models, datasets, and adversarial prompts, drawing attention to low true-positive rates at controlled false-positive operating points. It argues that headline accuracy alone can mislead when base rates and decision thresholds matter. The present study reports precision, recall, F1, ROC-AUC, and the confusion matrix, but does not calibrate deployment thresholds."
+  },
+  {
+    "title": "Exploring the Limitations of Detecting Machine-Generated Text",
+    "authors": "Doughman, J. et al.",
+    "year": 2025,
+    "venue": "COLING 2025, 4274–4281",
+    "url": "https://aclanthology.org/2025.coling-main.288/",
+    "relevance": "This work studies detector sensitivity to stylistic and readability changes and finds that such transformations can reduce performance substantially. It is relevant to a detector whose inputs are manually engineered style statistics: style cues may correlate with generation in a dataset while remaining easy to shift. Explanations of those features describe reliance, not validity or invariance."
+  },
+  {
+    "title": "DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text",
+    "authors": "Yang, X. et al.",
+    "year": 2024,
+    "venue": "ICLR 2024",
+    "url": "https://arxiv.org/abs/2305.17359",
+    "relevance": "DNA-GPT compares a continuation in the candidate with regenerated continuations from a language model using n-gram divergence. It is a training-free detection strategy that can work with black-box generation access, but requires the ability to query a relevant generator and depends on continuation sampling. This highlights the distinction between detecting text from a known accessible generator and auditing an already deployed black-box classifier."
+  },
+  {
+    "title": "M4: Multi-generator, Multi-domain, and Multi-lingual Black-Box Machine-Generated Text Detection",
+    "authors": "Wang, Y. et al.",
+    "year": 2024,
+    "venue": "EACL 2024, 1369–1407",
+    "url": "https://aclanthology.org/2024.eacl-long.83/",
+    "relevance": "M4 evaluates black-box detectors across multiple generation systems, subject domains, and languages. The paper reports generalization challenges when domains and generators differ from those seen during training. Its design informs a cautious reading of any single pooled score: aggregate performance can hide difficult slices."
+  },
+  {
+    "title": "MAGE: Machine-generated Text Detection in the Wild",
+    "authors": "Li, Y. et al.",
+    "year": 2024,
+    "venue": "ACL 2024, 36–53",
+    "url": "https://aclanthology.org/2024.acl-long.3/",
+    "relevance": "MAGE assembles diverse real-world-like detection tasks and evaluates 27 language models. Its results emphasize that detection becomes harder under distribution changes and realistic text conditions. It motivates reporting the evaluation source, sampling protocol, and intended scope alongside the score, as done in this project."
+  },
+  {
+    "title": "Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature",
+    "authors": "Bao, G. et al.",
+    "year": 2024,
+    "venue": "ICLR 2024",
+    "url": "https://arxiv.org/abs/2310.05130",
+    "relevance": "Fast-DetectGPT estimates conditional probability curvature more efficiently than the perturbation-heavy DetectGPT approach and reports substantial speedups in its evaluated setting. It retains dependence on language-model probability access, and efficiency claims are tied to the authors' benchmark conditions. It illustrates a tradeoff between inference cost and access requirements."
+  },
+  {
+    "title": "Ghostbuster: Detecting Text Ghostwritten by Large Language Models",
+    "authors": "Verma, V., Fleisig, E., Tomlin, N., & Klein, D.",
+    "year": 2024,
+    "venue": "NAACL-HLT 2024, 1702–1717",
+    "url": "https://aclanthology.org/2024.naacl-long.95/",
+    "relevance": "Ghostbuster computes probability-based features using weaker language models, selects feature combinations, and trains a classifier without access to the target generator's token probabilities. The paper evaluates essays, creative writing, and news, reporting strong results across several shifts. Its learned features remain model- and dataset-dependent; it is a distinct trained detector, not a post-hoc explanation of an arbitrary frozen detector."
+  },
+  {
+    "title": "Spotting LLMs With Binoculars: Zero-Shot Detection of Machine-Generated Text",
+    "authors": "Hans, A. et al.",
+    "year": 2024,
+    "venue": "ICML 2024, PMLR 235, 17519–17537",
+    "url": "https://proceedings.mlr.press/v235/hans24a.html",
+    "relevance": "Binoculars contrasts the token-level behavior of two related pretrained language models to produce a zero-shot score. The authors report high detection performance under their tested models and datasets. Performance depends on reference-model choice, text length, and evaluation distribution, so reported low false-positive rates should not be read as universal guarantees."
+  },
+  {
+    "title": "RAID: A Shared Benchmark for Robust Evaluation of Machine-Generated Text Detectors",
+    "authors": "Dugan, L. et al.",
+    "year": 2024,
+    "venue": "ACL 2024, 12463–12492",
+    "url": "https://aclanthology.org/2024.acl-long.674/",
+    "relevance": "RAID includes over six million samples, 11 generators, eight domains, 11 attack types, and four decoding strategies. It was built to stress robustness across generators, domains, attacks, and decoding settings. This project uses a balanced 10,000-example sample from its training split; that offers broad-source evaluation but is not a complete RAID benchmark run, and possible source overlap cannot be excluded."
+  },
+  {
+    "title": "Stumbling Blocks: Stress Testing the Robustness of Machine-Generated Text Detectors Under Attacks",
+    "authors": "Wang, Y. et al.",
+    "year": 2024,
+    "venue": "ACL 2024, 2894–2925",
+    "url": "https://aclanthology.org/2024.acl-long.160/",
+    "relevance": "This paper applies editing, paraphrasing, co-generation, and prompting attacks to detectors and reports marked performance degradation across attacks. The results show that surface cues can be modified while preserving much of a text's meaning. A balanced static sample therefore estimates one operating condition, not resistance to adversarial rewriting."
+  },
+  {
+    "title": "The Disagreement Problem in Explainable Machine Learning: A Practitioner's Perspective",
+    "authors": "Krishna, S. et al.",
+    "year": 2024,
+    "venue": "Transactions on Machine Learning Research",
+    "url": "https://arxiv.org/abs/2202.01602",
+    "relevance": "Motivates reporting agreement between LIME and Kernel SHAP instead of assuming a single ranking is definitive."
+  },
+  {
+    "title": "Tackling the XAI Disagreement Problem with Regional Explanations",
+    "authors": "Laberge, G., Pequignot, Y. B., Marchand, M., & Khomh, F.",
+    "year": 2024,
+    "venue": "AISTATS",
+    "url": "https://proceedings.mlr.press/v238/laberge24a.html",
+    "relevance": "Shows why aggregate comparisons across groups can complement individual explanations."
+  },
+  {
+    "title": "Boundary-Aware Uncertainty for Feature Attribution Explainers",
+    "authors": "Hill, D., Masoomi, A., Torop, M., Ghimire, S., & Dy, J.",
+    "year": 2024,
+    "venue": "AISTATS",
+    "url": "https://proceedings.mlr.press/v238/hill24a.html",
+    "relevance": "Distinguishes uncertainty in explanations from uncertainty in model outputs."
+  },
+  {
+    "title": "GPT detectors are biased against non-native English writers",
+    "authors": "Liang, W., Yuksekgonul, M., Mao, Y., Wu, E., & Zou, J.",
+    "year": 2023,
+    "venue": "Patterns, 4(7), 100779",
+    "url": "https://doi.org/10.1016/j.patter.2023.100779",
+    "relevance": "Across seven detectors and essays by non-native and native English writers, the authors document elevated false-positive risks for non-native writing. The paper warns that simple lexical and syntactic regularity can be mistaken for machine authorship. Its sample and detector set are bounded, but its equity implication is directly relevant to stylometric features and any high-stakes use."
+  },
+  {
+    "title": "DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature",
+    "authors": "Mitchell, E., Lee, Y., Khazatsky, A., Manning, C. D., & Finn, C.",
+    "year": 2023,
+    "venue": "ICML 2023, PMLR 202, 24950–24962",
+    "url": "https://proceedings.mlr.press/v202/mitchell23a.html",
+    "relevance": "DetectGPT compares a candidate text's log probability under a reference language model with probabilities of perturbed variants, exploiting a curvature pattern observed in model-generated text. It demonstrated a strong zero-shot direction without training a conventional classifier, but needs access to a suitable scoring model and repeated perturbation queries. This differs from the evaluated project, which inspects a fixed detector using only eight numeric features."
+  },
+  {
+    "title": "MULTITuDE: Large-Scale Multilingual Machine-Generated Text Detection Benchmark",
+    "authors": "Macko, D. et al.",
+    "year": 2023,
+    "venue": "EMNLP 2023, 9960–9987",
+    "url": "https://aclanthology.org/2023.emnlp-main.616/",
+    "relevance": "MULTITuDE contains 74,081 samples across 11 languages and eight language models. It broadens benchmark coverage beyond English and tests whether detection behavior transfers across languages and generators. It supports treating language as an evaluation dimension rather than assuming a detector's English performance generalizes."
+  },
+  {
+    "title": "Cross-Domain Detection of GPT-2-Generated Technical Text",
+    "authors": "Rodriguez, J. D., Hay, J., Gros, D., Shamsi, J. A., & Srinivasan, P.",
+    "year": 2022,
+    "venue": "NAACL-HLT 2022, 1213–1233",
+    "url": "https://aclanthology.org/2022.naacl-main.88/",
+    "relevance": "This study evaluates transfer between scientific domains and finds that a modest amount of target-domain data can improve detection in a new technical field. It establishes domain shift as a first-order issue: cues learned from one subject area need not transfer to another. The current project's RAID sample pools domains and does not claim domain-specific deployment performance."
+  },
+  {
+    "title": "A geometric method for improved uncertainty estimation in real-time",
+    "authors": "Chouraqui, G., Cohen, L., Einziger, G., & Leman, L.",
+    "year": 2022,
+    "venue": "UAI",
+    "url": "https://proceedings.mlr.press/v180/chouraqui22a.html",
+    "relevance": "Motivates auditing model scores as empirical probabilities rather than reading the largest score as calibrated confidence."
+  },
+  {
+    "title": "TURINGBENCH: A Benchmark Environment for Turing Test in the Age of Neural Text Generation",
+    "authors": "Uchendu, A., Ma, Z., Le, T., Zhang, R., & Lee, D.",
+    "year": 2021,
+    "venue": "Findings of EMNLP 2021, 2001–2016",
+    "url": "https://aclanthology.org/2021.findings-emnlp.172/",
+    "relevance": "TURINGBENCH provides 200,000 human and generated samples across 20 model labels, with both binary detection and generator attribution tasks. Its central contribution is a shared evaluation environment: model rankings become meaningful only relative to explicit generators, tasks, and datasets. The benchmark predates current large-model diversity, so it also illustrates how detector conclusions age as generation systems change."
+  },
+  {
+    "title": "Improving KernelSHAP: Practical Shapley Value Estimation Using Linear Regression",
+    "authors": "Covert, I., & Lee, S.-I.",
+    "year": 2021,
+    "venue": "AISTATS",
+    "url": "https://proceedings.mlr.press/v130/covert21a.html",
+    "relevance": "Explains why coalition sampling and estimation variance matter when reading Kernel SHAP scores."
+  },
+  {
+    "title": "Distribution-Free Calibration Guarantees for Histogram Binning without Sample Splitting",
+    "authors": "Gupta, C., & Ramdas, A.",
+    "year": 2021,
+    "venue": "ICML",
+    "url": "https://proceedings.mlr.press/v139/gupta21b.html",
+    "relevance": "Places the calibration slide's bin-level reliability summary in context."
+  }
+]

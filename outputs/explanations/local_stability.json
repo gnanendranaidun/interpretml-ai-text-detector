@@ -1,0 +1,82 @@
+{
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "background": "Fixed 50-row sample drawn from the saved 500-row PDP cohort",
+  "lime_samples": 3000,
+  "kernel_shap_samples": 128,
+  "cases": {
+    "correct_ai": {
+      "probability_range": 0.0,
+      "methods": {
+        "LIME": {
+          "rank_correlation": 0.8666666666666669,
+          "sign_consistency": 0.875,
+          "top3_overlap": 1.0,
+          "badge": "Stable"
+        },
+        "Kernel SHAP": {
+          "rank_correlation": 0.9428571428571428,
+          "sign_consistency": 0.85,
+          "top3_overlap": 1.0,
+          "badge": "Stable"
+        }
+      }
+    },
+    "correct_human": {
+      "probability_range": 0.0,
+      "methods": {
+        "LIME": {
+          "rank_correlation": 0.6166666666666668,
+          "sign_consistency": 0.85,
+          "top3_overlap": 0.6666666666666666,
+          "badge": "Mixed"
+        },
+        "Kernel SHAP": {
+          "rank_correlation": 0.9714285714285715,
+          "sign_consistency": 1.0,
+          "top3_overlap": 0.8666666666666666,
+          "badge": "Stable"
+        }
+      }
+    },
+    "human_misclassified_as_ai": {
+      "probability_range": 0.0,
+      "methods": {
+        "LIME": {
+          "rank_correlation": 0.7285714285714288,
+          "sign_consistency": 0.725,
+          "top3_overlap": 1.0,
+          "badge": "Mixed"
+        },
+        "Kernel SHAP": {
+          "rank_correlation": 0.9595238095238097,
+          "sign_consistency": 0.95,
+          "top3_overlap": 0.8,
+          "badge": "Stable"
+        }
+      }
+    },
+    "ai_misclassified_as_human": {
+      "probability_range": 0.0,
+      "methods": {
+        "LIME": {
+          "rank_correlation": 0.9714285714285715,
+          "sign_consistency": 0.925,
+          "top3_overlap": 1.0,
+          "badge": "Stable"
+        },
+        "Kernel SHAP": {
+          "rank_correlation": 0.9380952380952381,
+          "sign_consistency": 0.875,
+          "top3_overlap": 1.0,
+          "badge": "Stable"
+        }
+      }
+    }
+  }
+}
